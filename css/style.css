@@ -198,6 +198,14 @@ a {
     line-height: 13px;
     color: var(--add_btn-color);
     cursor: pointer;
+    transition: var(--main-timing-function);
+}
+
+.visitor__btn:hover {
+    cursor: pointer;
+    color: var(--efect-color);
+    background: var(--btn_hover-background-color);
+    box-shadow: var(--btn_shadow-box-shadow);
 }
 
 .visitor__gallery {
