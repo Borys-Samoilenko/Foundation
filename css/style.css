@@ -270,7 +270,6 @@ a {
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
-
 }
 
 .image__two-slots {
