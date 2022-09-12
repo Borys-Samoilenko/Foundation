@@ -7,6 +7,8 @@
     --efect-color: #fff;
     --bg-background-color: #f3c6bd; 
     --btn-background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #3040C4;
+    --add_btn-background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #FFFFFF;
+    --add_btn-color: #000;
     --btn_hover-background-color: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #182383;
     --btn_shadow-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.1), 2px 6px 8px rgba(0, 0, 0, 0.05), 0px 1px 0px rgba(255, 255, 255, 0.1);
     --main-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -14,6 +16,11 @@
 
 body {
     font-family: var(--main-font-family);
+    color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
     color: var(--main-color);
 }
 
@@ -90,7 +97,7 @@ body {
     transition: var(--main-timing-function);
 }
 
-/* .common__btn {
+.common__btn {
     width: 160px;
     height: 48px;
     border: transparent;
@@ -100,9 +107,10 @@ body {
     font-size: 18px;
     line-height: 13px;
     color: var(--efect-color);
-}  */
+    cursor: pointer;
+} 
 
-.header__button {
+/* .header__button {
     width: 160px;
     height: 48px;
     border: none;
@@ -112,7 +120,7 @@ body {
     font-size: 18px;
     line-height: 13px;
     color: var(--efect-color);
-}
+} */
 
 .header__button:hover {
     cursor: pointer;
@@ -144,4 +152,84 @@ body {
 
 .journal {
     padding: 30px 0 100px;
+}
+
+
+.visitor {
+    background-color: rgba(0, 161, 198, .3);
+    text-align: center;
+    padding: 108px 0 110px;
+}
+
+.visitor__headline {
+    max-width: 555px;
+    margin: 0 auto;
+}
+
+.visitor__sub-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 24px;
+}
+
+.visitor__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 30px;
+
+}
+
+.visitor__text {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 34px;
+}
+
+.additional__btn {
+    width: 160px;
+    height: 48px;
+    border: transparent;
+    border-radius: 2px;
+    background: var(--add_btn-background-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    color: var(--add_btn-color);
+    cursor: pointer;
+}
+
+.visitor__gallery {
+    padding-top: 111px;
+}
+
+.visitor__gallery-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.visitor__gallery-item {
+    max-width: 300px;
+    background: var(--add_btn-background-color);
+    transition: var(--main-timing-function);
+}
+
+.visitor__gallery-item:hover {
+    background: #3141c5;
+}
+
+.visitor__gallery-item:hover p {
+    color: var(--efect-color);
+}
+
+.visitor__gallery-img {
+    padding: 22px 0 22px;
+}
+
+.visitor__gallery-img--caption {
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 34px;
 }
