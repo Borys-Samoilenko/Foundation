@@ -218,8 +218,7 @@ a {
     gap: 30px;
 }
 
-.visitor__gallery-item {
-    max-width: 300px;
+.visitor__gallery-item { 
     background: var(--add_btn-background-color);
     transition: var(--main-timing-function);
 }
