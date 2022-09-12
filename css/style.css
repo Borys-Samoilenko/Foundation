@@ -225,7 +225,8 @@ a {
 }
 
 .visitor__gallery-img {
-    padding: 22px 0 22px;
+    object-fit: contain;
+    padding: 22px 60px;
 }
 
 .visitor__gallery-img--caption {
