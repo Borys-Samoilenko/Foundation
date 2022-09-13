@@ -376,6 +376,7 @@ a {
     opacity: 0.2;
     color: transparent;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .slick-active button,
