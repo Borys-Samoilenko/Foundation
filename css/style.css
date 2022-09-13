@@ -221,6 +221,8 @@ a {
 .visitor__gallery-item { 
     background: var(--add_btn-background-color);
     transition: var(--main-timing-function);
+    border-radius: 8px;
+    width: 262px;
 }
 
 .visitor__gallery-item:hover {
@@ -232,8 +234,10 @@ a {
 }
 
 .visitor__gallery-img {
-    object-fit: contain;
-    padding: 22px 60px;
+    display: flex;
+    object-fit: cover;
+    padding: 22px 0;
+    margin: 0 auto;
 }
 
 .visitor__gallery-img--caption {
