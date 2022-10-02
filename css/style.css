@@ -141,7 +141,6 @@ a {
 
 .hero {
     background-color: var(--bg-background-color);
-    margin-bottom: 13px;
 }
 
 
@@ -530,4 +529,190 @@ a {
 
 .communication__description {
     margin-bottom: 39px;
+}
+
+/* features */
+
+/* hiring */
+
+/* trial */
+.flex__trial {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.trial-box {
+    max-width: 555px;
+}
+
+.trial-box__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    margin-bottom: 12px;
+}
+
+.trial-box__text {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 26px;
+
+}
+
+.trial__input { 
+    width: 375px;
+    height: 48px;
+    padding-left: 15px;
+    background: var(--efect-color);
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.trial-box__cap {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--secondary-color);
+}
+
+.trial-box__terms {
+    text-decoration: underline;
+    color: #3142c6;
+}
+/* footer */
+
+
+/* button additional */
+.NB {
+    position: relative;
+    display: inline-block;
+    color: var(--efect-color);
+    text-decoration: none;
+    transition: var(--main-timing-function);
+    overflow: hidden;
+}
+
+.NB:hover {
+    background: var(--btn_hover-background-color);
+    color: var(--efect-color);
+    box-shadow: 0 0 5px #f5411d, 0 0 25px #f5411d, 0 0 50px #f5411d, 0 0 200px #f5411d;
+}
+
+.journal__item-img:hover {
+    box-shadow: 0 0 5px #f5411d, 0 0 25px #f5411d, 0 0 50px #f5411d, 0 0 200px #f5411d;
+    background-color: #df8b7b;
+}
+
+.NB span{
+    position: absolute;
+    display: block;
+}
+
+.NB span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #23c6cc);
+    animation: animate1 1s linear infinite; 
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.NB span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #23c6cc);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.NB span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #23c6cc);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.NB span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #23c6cc);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* media rules */
+
+@media screen and (max-width: 1440px) {
+    
+}
+
+@media screen and (max-width: 1090px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .logo__text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 290px;
+    }
+
+    .header {
+        background-color: var(--efect-color);
+        padding: 8px 0;
+    }
 }
